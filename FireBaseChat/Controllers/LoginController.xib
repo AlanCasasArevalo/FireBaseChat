@@ -13,9 +13,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginController" customModule="FireBaseChat" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="oZa-Qi-laA" id="zQJ-gu-7Nz"/>
+                <outlet property="nameTextField" destination="uVa-T6-3P4" id="Wcm-Y8-aPa"/>
+                <outlet property="passwordTextField" destination="fZ4-sB-kF7" id="mg6-nJ-ugd"/>
                 <outlet property="profileImageView" destination="mAe-yj-l8U" id="23A-8W-mWj"/>
                 <outlet property="registerButton" destination="4TS-NQ-QoP" id="6Ra-lF-j4H"/>
-                <outlet property="textViews" destination="xqR-nd-lfE" id="rfG-0O-AtR"/>
+                <outlet property="textViews" destination="xqR-nd-lfE" id="M2b-n6-UHY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,19 +33,19 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rGj-5D-N85">
                             <rect key="frame" x="2" y="2" width="323" height="216"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Name" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uVa-T6-3P4">
+                                <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Name" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uVa-T6-3P4">
                                     <rect key="frame" x="0.0" y="0.0" width="323" height="72"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oZa-Qi-laA">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Email" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oZa-Qi-laA">
                                     <rect key="frame" x="0.0" y="72" width="323" height="72"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZ4-sB-kF7">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Password" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZ4-sB-kF7">
                                     <rect key="frame" x="0.0" y="144" width="323" height="72"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -104,7 +107,7 @@
                 <constraint firstItem="mAe-yj-l8U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="z9q-p9-p5B"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-410.5" y="-38.5"/>
+            <point key="canvasLocation" x="-39" y="32"/>
         </view>
         <viewController id="4JJ-nT-jvA">
             <view key="view" contentMode="scaleToFill" id="LpX-GG-La6">
