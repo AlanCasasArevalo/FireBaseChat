@@ -12,6 +12,7 @@ class LoginController: UIViewController {
 
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var textViews: UIView!
+    @IBOutlet weak var profileImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
