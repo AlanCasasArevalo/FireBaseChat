@@ -9,15 +9,29 @@
 import UIKit
 import Firebase
 
+// MARK: - Life Circle
 class MainTableViewController: UITableViewController {
     
+    // MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
+        
+        if Auth.auth().currentUser?.uid == nil{
+            perform(#selector(handleLogout), with: nil, afterDelay: 0)
+        }
     }
 
+    // MARK: - Logout
     @objc func handleLogout() {
+        
+        do {
+            try Auth.auth().signOut()
+        } catch let logOutError {
+            print(logOutError)
+        }
+        
         let loginVC = LoginController()
         present(loginVC, animated: true, completion: nil)
     }
