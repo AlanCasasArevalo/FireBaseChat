@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		25161FE65855143CA0BF9666 /* Pods_FireBaseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EE924CB28F420D35A10B21 /* Pods_FireBaseChat.framework */; };
 		511C9778201CF36200B75F84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 511C9777201CF36200B75F84 /* GoogleService-Info.plist */; };
+		513B21EB201F826600C5C3AB /* NewMessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B21EA201F826600C5C3AB /* NewMessagesTableViewController.swift */; };
+		513B21ED201F833A00C5C3AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513B21EC201F833A00C5C3AB /* Assets.xcassets */; };
+		513B21EF201F894B00C5C3AB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B21EE201F894B00C5C3AB /* User.swift */; };
+		515DBC3B201F986700386D7E /* UserCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515DBC3A201F986700386D7E /* UserCell2.swift */; };
 		51ABC17A201C839A006991D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ABC179201C839A006991D2 /* AppDelegate.swift */; };
-		51ABC17C201C839B006991D2 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ABC17B201C839A006991D2 /* MainTableViewController.swift */; };
-		51ABC181201C839B006991D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51ABC180201C839B006991D2 /* Assets.xcassets */; };
+		51ABC17C201C839B006991D2 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ABC17B201C839A006991D2 /* MessagesTableViewController.swift */; };
 		51ABC184201C839B006991D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51ABC182201C839B006991D2 /* LaunchScreen.storyboard */; };
 		51ABC18E201C86F4006991D2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ABC18C201C86F4006991D2 /* LoginController.swift */; };
 		51ABC18F201C86F4006991D2 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51ABC18D201C86F4006991D2 /* LoginController.xib */; };
@@ -21,10 +24,13 @@
 		22EE924CB28F420D35A10B21 /* Pods_FireBaseChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBaseChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		286CFF86C76B6AA471DA39AE /* Pods-FireBaseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireBaseChat/Pods-FireBaseChat.release.xcconfig"; sourceTree = "<group>"; };
 		511C9777201CF36200B75F84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		513B21EA201F826600C5C3AB /* NewMessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessagesTableViewController.swift; sourceTree = "<group>"; };
+		513B21EC201F833A00C5C3AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		513B21EE201F894B00C5C3AB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		515DBC3A201F986700386D7E /* UserCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell2.swift; sourceTree = "<group>"; };
 		51ABC176201C839A006991D2 /* FireBaseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBaseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51ABC179201C839A006991D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51ABC17B201C839A006991D2 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		51ABC180201C839B006991D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51ABC17B201C839A006991D2 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		51ABC183201C839B006991D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51ABC185201C839B006991D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51ABC18C201C86F4006991D2 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -52,6 +58,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		513B21F0201F895200C5C3AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				513B21EE201F894B00C5C3AB /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		51ABC16D201C839A006991D2 = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +89,10 @@
 			children = (
 				51ABC179201C839A006991D2 /* AppDelegate.swift */,
 				51ABC18B201C86D3006991D2 /* Controllers */,
-				51ABC180201C839B006991D2 /* Assets.xcassets */,
 				51ABC182201C839B006991D2 /* LaunchScreen.storyboard */,
+				513B21F0201F895200C5C3AB /* Model */,
 				51ABC185201C839B006991D2 /* Info.plist */,
+				513B21EC201F833A00C5C3AB /* Assets.xcassets */,
 				511C9777201CF36200B75F84 /* GoogleService-Info.plist */,
 			);
 			path = FireBaseChat;
@@ -86,8 +101,10 @@
 		51ABC18B201C86D3006991D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				51ABC17B201C839A006991D2 /* MainTableViewController.swift */,
+				51ABC17B201C839A006991D2 /* MessagesTableViewController.swift */,
+				513B21EA201F826600C5C3AB /* NewMessagesTableViewController.swift */,
 				51ABC18C201C86F4006991D2 /* LoginController.swift */,
+				515DBC3A201F986700386D7E /* UserCell2.swift */,
 				51ABC18D201C86F4006991D2 /* LoginController.xib */,
 			);
 			path = Controllers;
@@ -166,8 +183,8 @@
 			files = (
 				51ABC184201C839B006991D2 /* LaunchScreen.storyboard in Resources */,
 				511C9778201CF36200B75F84 /* GoogleService-Info.plist in Resources */,
+				513B21ED201F833A00C5C3AB /* Assets.xcassets in Resources */,
 				51ABC18F201C86F4006991D2 /* LoginController.xib in Resources */,
-				51ABC181201C839B006991D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,8 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51ABC17C201C839B006991D2 /* MainTableViewController.swift in Sources */,
+				513B21EB201F826600C5C3AB /* NewMessagesTableViewController.swift in Sources */,
+				51ABC17C201C839B006991D2 /* MessagesTableViewController.swift in Sources */,
 				51ABC18E201C86F4006991D2 /* LoginController.swift in Sources */,
+				515DBC3B201F986700386D7E /* UserCell2.swift in Sources */,
+				513B21EF201F894B00C5C3AB /* User.swift in Sources */,
 				51ABC17A201C839A006991D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
